@@ -1,0 +1,37 @@
+:root{
+    --Colour0-light-grey: rgb(167, 169, 172);
+    --Colour1-blue: rgb(0, 125, 190);
+    --Colour2-dark-blue: rgb(0, 88, 138);
+    --Colour3: rgb(0, 171, 189);
+    --Colour4-pale-blue: rgb(84, 198, 211);
+    --Colour5-light-blue: rgb(0, 183, 199);
+    --Colour6-black: rgb(35, 31, 32);
+    --Colour7-grey: rgb(99, 100, 102);
+    --Colour8-white: white;
+
+    --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    min-height: 200vh;
+    background-image: url("../images/OIP.jpg");
+ 
+}
+
+
+

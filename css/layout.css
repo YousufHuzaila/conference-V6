@@ -1,0 +1,401 @@
+.container{
+    width: 120rem;
+    margin: 4rem auto;
+    height: 52rem;
+}
+
+/**Header**/
+.header{
+    height: auto;
+    
+}
+.header__title{
+    text-align: center;
+    color: var(--C6-black);
+    position: relative;
+}
+
+.header__title h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.header__title h2{
+    font-size: 1.7rem;
+}
+
+.header_content{
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    margin-top: -10rem;
+    height: 12rem;
+}
+.udm_logo{
+    height: 8rem;
+}
+
+
+
+/**SIGN IN**/
+.sign_in{
+    position: absolute;
+    bottom: 0;
+    right: 6vw;
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    padding: 1% 0;
+}
+
+.sign_in a{
+    text-decoration: none;
+    color: var(--Colour2-dark-blue);
+}
+
+.sign_in_links:hover{
+    text-decoration: underline;
+}
+
+
+
+.content{
+    display: flex;
+}
+
+/**Sidebar**/
+.sidebar{
+    flex: 0 0 10%;
+}
+
+.active{
+    background-color: var(--Colour2-dark-blue);
+}
+
+.sidebar__link{
+    text-decoration: none;
+    color: var(--Colour6-black);
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.sidebar__link:hover{
+    color: var(--Colour8-white);
+}
+
+/**remove the dot**/
+.sidebar__item{
+    list-style: none;
+}
+
+.sidebar__item:hover{
+    background-color: var(--Colour2-dark-blue);
+    transition: background-color 0.6s ease;
+}
+/**search**/
+.search{
+    background-color:brown;
+    flex: 0 0 40%;
+}
+
+.search__input{
+    font-size: 2rem;
+    color: black;
+
+    background-color:var(--Colour1-blue) ;
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 15px;
+    width: 60%;
+    transition: all .2s;
+}
+
+.search__input:focus{
+    width: 80%;
+    outline: 1px solid var(--Colour1-blue);
+}
+
+
+/**main**/
+.conference-info{
+        width: 89%;       
+    
+}
+
+.banner{
+    display: block;
+    width: 100%;
+    height: 25rem;
+    margin: auto;
+}
+
+
+
+
+.counter{
+    display: flex;
+    align-items: center;
+}
+
+.count{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    font-family: 'fontawesome';
+    display: flex;
+    align-items: center;
+    font-size: 4vw;
+    background-color:var(--Colour8-white);
+    opacity: 0.6;
+    padding: 1%;
+}
+
+.count_number{
+    position: absolute;
+    left: 5vw;
+}
+
+.count_text{
+    margin-left: 3vw;
+}
+
+.block{
+    border: 1px solid var(--C7-grey);
+    min-height: 25vh;
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 1%;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: var(--box-shadow);
+}
+
+.content ul,ol{
+    list-style-position: inside;
+}
+
+.books{
+    width: 19%;
+    margin: 2%;
+    border: 4px solid var(--Colour2-dark-blue);
+    box-shadow: var(--box-shadow);
+}
+/**sidebar**/
+.side{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1%;
+}
+
+.box{
+    border: 1px solid var(--C7-grey);
+    min-height: 25vh;
+    font-size: 1.15rem;
+    text-align: center;
+    padding: 1%;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--C4-pale-blue);
+    box-shadow: var(--box-shadow)  ;
+}
+
+.side_counter{
+    margin: auto;
+}
+
+.side_count_num{
+    margin-left: -2.5vw;
+}
+
+.side img{
+    width: 100%;
+}
+
+.counter_icon{
+    margin-top: -1.5vh;
+}
+
+.countdown{
+    font-size: 2rem;
+    color: var(--Colour6-black);
+}
+
+
+.heading{
+    font-weight: bold;
+}
+
+
+.important_dates{
+    text-align:left;
+    font-size: 1.4rem;
+}
+
+.important_dates div{
+    padding: 0 5%;
+}
+
+.session_titles{
+    color:var(--Colour2-dark-blue);
+    text-decoration: underline;
+}
+
+.conf_mgt, .pub_partners{
+    padding: 1%;
+    min-height: 0vh;
+
+
+}
+
+.prev_conf{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 2rem;
+}
+
+.prev_conf_links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.conf_icon{
+    height: 6vh;
+    margin: 1rem 0;
+}
+.conf_link{
+    text-decoration: none;
+}
+
+.conf_link:hover{
+    text-decoration: underline;
+}
+
+
+.footer{
+    font-size: 2rem;
+    color: var(--Colour6-black);
+} 
+
+.copyright{
+    text-align: center;
+    padding: 1%;
+}
+
+/**registration**/
+
+.banner2{
+    display: block;
+    width: 100%;
+    height: 25rem;
+    margin: auto;
+}
+
+table, th,td{
+    border: 1px solid var(--Colour6-black);
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 1%;
+    text-align: center;
+}
+
+th{
+    background-color: var(--Colour1-blue);
+    color: var(--Colour8-white);
+}
+.reg_text{
+    margin: 2rem 0;
+}
+
+.block_title{
+    color: var(--Colour2-dark-blue);
+    padding: 1%;
+    margin-bottom: 2rem;
+}
+
+.block_heading{
+    color: var(--Colour1-blue);
+    padding: 1.2%;
+    margin-bottom: 2rem 0;
+}
+
+
+
+
+/**KEYNOTES**/
+
+.keynote_content{
+    width: 125%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.speaker_title{
+    border: 1px solid var(--Colour6-black);
+    box-shadow: var(--box-shadow);
+    margin: 2rem 0;
+}
+
+.speaker_heading{
+    font-size: 4rem;
+    color: var(--Colour2-dark-blue);
+    padding: 1%;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.speaker{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.speaker_details{
+    display: flex;
+    font-size: 1.6rem;
+    flex: 1 0 0;
+    padding-left: 4rem;
+}
+
+.speaker_video{
+    font-family: 'fontawesome';
+    font-size: 1.5rem;
+    padding: 1%;
+    width: 30%;
+}
+
+.video_link{
+    text-decoration: none;
+    word-spacing: 0.5rem;
+    color: var(--Colour6-black);
+    border: 1px solid var(--Colour6-black);
+    padding: 5%;
+}
+
+.video_link:hover{
+    background-color: var(--Colour2-dark-blue);
+    color: var(--Colour4-pale-blue);
+}
+
+.speaker_img{
+    width: 12vw;
+    height: 25vh;
+    margin: 0 2%;
+}
+
+.banner3{
+    display: block;
+    width: 150%;
+    height: 25rem;
+    margin: auto;
+}
