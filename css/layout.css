@@ -427,3 +427,19 @@ th{
     padding-left: 2%;
     font-size: 2rem;
 }
+
+input[type=text], select, textarea {
+    width: 40%;
+    padding: 4px;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    padding: 4px 4px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+
