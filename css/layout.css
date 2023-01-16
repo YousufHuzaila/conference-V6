@@ -395,7 +395,35 @@ th{
 
 .banner3{
     display: block;
-    width: 150%;
+    width: 100%;
     height: 25rem;
     margin: auto;
+}
+
+
+/**Contact**/
+.banner4{
+    display: block;
+    width: 100%;
+    height: 25rem;
+    margin: auto;
+}
+
+.contact_title{
+    border: 1px solid var(--Colour6-black);
+    box-shadow: var(--box-shadow);
+    margin: 2rem 0;
+}
+
+.contact_heading{
+    font-size: 4rem;
+    color: var(--Colour2-dark-blue);
+    padding: 1%;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.contact{
+    padding-left: 2%;
+    font-size: 2rem;
 }
