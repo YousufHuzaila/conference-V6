@@ -11,7 +11,7 @@
 }
 .header__title{
     text-align: center;
-    color: var(--C6-black);
+    color: var(--Colour6-black);
     position: relative;
 }
 
@@ -161,7 +161,7 @@
 }
 
 .block{
-    border: 1px solid var(--C7-grey);
+    border: 1px solid var(--Colour7-grey);
     min-height: 25vh;
     font-size: 1.5rem;
     text-align: justify;
@@ -192,7 +192,7 @@
 }
 
 .box{
-    border: 1px solid var(--C7-grey);
+    border: 1px solid var(--Colour7-grey);
     min-height: 25vh;
     font-size: 1.15rem;
     text-align: center;
@@ -452,7 +452,7 @@ input[type=text], select, textarea {
 }
 
 .about{
-    border: 1px solid var(--C7-grey);
+    border: 1px solid var(--Colour7-grey);
     min-height: 25vh;
     font-size: 1.5rem;
     text-align: justify;
