@@ -443,3 +443,37 @@ input[type=text], select, textarea {
     float: right;
   }
 
+  /**about**/
+  .banner5{
+    display: block;
+    width: 100%;
+    height: 25rem;
+    margin: auto;
+}
+
+.about{
+    border: 1px solid var(--C7-grey);
+    min-height: 25vh;
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 1%;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: var(--box-shadow);
+}
+
+
+.about_title{
+    color: var(--Colour2-dark-blue);
+    padding: 1%;
+    margin-bottom: 2rem;
+}
+
+.about_heading{
+    color: var(--Colour1-blue);
+    padding: 1.2%;
+    margin-bottom: 2rem 0;
+}
+
