@@ -4,15 +4,22 @@
     height: 52rem;
 }
 
-/**Header**/
+
 .header{
-    height: auto;
-    
-}
-.header__title{
+    display: flex;
+    flex-direction: row;
     text-align: center;
-    color: var(--Colour1-blue);
-    position: relative;
+    padding: 2%;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/OIP.jpg);
+}
+
+
+.header__title{
+   
+    flex: 50%;
+    font-size:30px;
 }
 
 .header__title h1{
@@ -24,40 +31,29 @@
     font-size: 1.7rem;
 }
 
+
 .header_content{
-    display: flex;
-    justify-content: space-between;
-    padding: 1%;
-    margin-top: -10rem;
-    height: 12rem;
+    width: 100%;
+    flex:25%;
+   
 }
+
+
+.conf_logo{
+    width: 50%;
+    
+}
+
 .udm_logo{
-    height: 8rem;
+    width: 50%;
+  
 }
 
-
-
-/**SIGN IN**/
-.sign_in{
-    position: absolute;
-    bottom: 0;
-    right: 6vw;
-    width: 10%;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.6rem;
-    padding: 1% 0;
-}
-
-.sign_in a{
-    text-decoration: none;
-    color: var(--Colour2-dark-blue);
-}
-
-.sign_in_links:hover{
-    text-decoration: underline;
-}
-
+@media (max-width: 800px) {
+    .header {
+      flex-direction: column;
+    }
+  }
 
 
 .content{
@@ -65,19 +61,19 @@
 }
 
 /**Sidebar**/
-.sidebar{
-    flex: 0 0 10%;
-}
 
 .active{
-    background-color: var(--Colour2-dark-blue);
+    background-color: var(--Colour4-pale-blue);
 }
 
 .sidebar__link{
     text-decoration: none;
     color: var(--Colour6-black);
-    padding: 1rem;
-    font-size: 1.5rem;
+    /* padding: 1rem; */
+    font-size: 20px;
+    /* border: 2px solid yellow; */
+    padding-bottom: 10%;
+    
 }
 
 .sidebar__link:hover{
@@ -93,71 +89,64 @@
     background-color: var(--Colour2-dark-blue);
     transition: background-color 0.6s ease;
 }
-/**search**/
-.search{
-    background-color:brown;
-    flex: 0 0 40%;
-}
-
-.search__input{
-    font-size: 2rem;
-    color: black;
-
-    background-color:var(--Colour1-blue) ;
-    border: none;
-    padding: 0.7rem 2rem;
-    border-radius: 15px;
-    width: 60%;
-    transition: all .2s;
-}
-
-.search__input:focus{
-    width: 80%;
-    outline: 1px solid var(--Colour1-blue);
-}
-
 
 /**main**/
-.conference-info{
-        width: 89%;       
-    
-}
 
-.banner{
-    display: block;
+
+
+
+.top_content{
+    display: flex;
+    /* border: 2px solid red; */
     width: 100%;
-    height: 25rem;
-    margin: auto;
+    background-image: url(../images/banner.jpg);
+    padding: 2%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 320px;
+    justify-content: center;
+    align-items: center;
 }
-
-
-
 
 .counter{
     display: flex;
     align-items: center;
+    /* border: 2px solid blue; */
+    padding: 2%;
 }
 
 .count{
-    position: absolute;
-    top: 50%;
-    left: 30%;
+    /* position: absolute; */
+    /* top: 50%;
+    left: 30%; */
+    /* border: 2px solid yellow; */
     font-family: 'fontawesome';
     display: flex;
     align-items: center;
-    font-size: 4vw;
+    font-size: 40px;
     background-color:var(--Colour8-white);
     opacity: 0.6;
     padding: 1%;
+    width: 100%;
+    justify-content: center;
+
+    /* background-image: url(../images/banner.jpg); */
 }
 
-.count_number{
-    position: absolute;
-    left: 5vw;
+.advert{
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    padding: 2%;
 }
 
-.count_text{
-    margin-left: 3vw;
+.previous_conference{
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    padding: 2%;
 }
 
 .block{
@@ -205,31 +194,6 @@
     box-shadow: var(--box-shadow)  ;
 }
 
-.side_counter{
-    margin: auto;
-}
-
-.side_count_num{
-    margin-left: -2.5vw;
-}
-
-.side img{
-    width: 100%;
-}
-
-.counter_icon{
-    margin-top: -1.5vh;
-}
-
-.countdown{
-    font-size: 2rem;
-    color: var(--Colour6-black);
-}
-
-
-.heading{
-    font-weight: bold;
-}
 
 
 .important_dates{
@@ -258,6 +222,13 @@
     flex-direction: column;
     justify-content: space-evenly;
     font-size: 2rem;
+    flex: 50%;
+}
+.social_media{
+    flex: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .prev_conf_links{
@@ -281,7 +252,8 @@
 
 .footer{
     font-size: 2rem;
-    color: var(--Colour6-black);
+    color: white;
+    background-color: var(--Colour1-blue);
 } 
 
 .copyright{
@@ -290,12 +262,10 @@
 }
 
 /**registration**/
-
-.banner2{
-    display: block;
-    width: 100%;
-    height: 25rem;
-    margin: auto;
+h2{
+    color: var(--Colour1-blue);
+    padding: 1.2%;
+    margin-bottom: 2rem 0;
 }
 
 table, th,td{
@@ -312,9 +282,7 @@ th{
     background-color: var(--Colour1-blue);
     color: var(--Colour8-white);
 }
-.reg_text{
-    margin: 2rem 0;
-}
+
 
 .block_title{
     color: var(--Colour2-dark-blue);
@@ -333,12 +301,6 @@ th{
 
 /**KEYNOTES**/
 
-.keynote_content{
-    width: 125%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-}
 
 .speaker_title{
     border: 1px solid var(--Colour6-black);
@@ -367,25 +329,6 @@ th{
     padding-left: 4rem;
 }
 
-.speaker_video{
-    font-family: 'fontawesome';
-    font-size: 1.5rem;
-    padding: 1%;
-    width: 30%;
-}
-
-.video_link{
-    text-decoration: none;
-    word-spacing: 0.5rem;
-    color: var(--Colour6-black);
-    border: 1px solid var(--Colour6-black);
-    padding: 5%;
-}
-
-.video_link:hover{
-    background-color: var(--Colour2-dark-blue);
-    color: var(--Colour4-pale-blue);
-}
 
 .speaker_img{
     width: 12vw;
@@ -393,39 +336,15 @@ th{
     margin: 0 2%;
 }
 
-.banner3{
-    display: block;
-    width: 100%;
-    height: 25rem;
-    margin: auto;
-}
-
 
 /**Contact**/
-.banner4{
-    display: block;
-    width: 100%;
-    height: 25rem;
-    margin: auto;
-}
 
-.contact_title{
-    border: 1px solid var(--Colour6-black);
-    box-shadow: var(--box-shadow);
-    margin: 2rem 0;
-}
 
-.contact_heading{
-    font-size: 4rem;
-    color: var(--Colour2-dark-blue);
-    padding: 1%;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-}
 
 .contact{
     padding-left: 2%;
     font-size: 2rem;
+    color:var(--Colour2-dark-blue);
 }
 
 input[type=text], select, textarea {
@@ -444,12 +363,7 @@ input[type=text], select, textarea {
   }
 
   /**about**/
-  .banner5{
-    display: block;
-    width: 100%;
-    height: 25rem;
-    margin: auto;
-}
+
 
 .about{
     border: 1px solid var(--Colour7-grey);
