@@ -401,3 +401,10 @@ input[type=text], select, textarea {
     color: rgb(155, 19, 19);
 }
 
+
+/**travel**/
+.travel_bold{
+    font-weight: bold;
+    font-size: large;
+}
+
