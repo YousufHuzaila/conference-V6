@@ -53,6 +53,10 @@
     .header {
       flex-direction: column;
     }
+
+    .card {
+        width: 100%;
+     }
   }
 
 
@@ -426,8 +430,8 @@ input[type=text], select, textarea {
     display: table;
     clear: both;
  }
- @media screen and (max-width: 600px) {
+ /* @media screen and (max-width: 600px) {
     .card {
        width: 100%;
     }
- }
+ } */
