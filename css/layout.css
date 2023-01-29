@@ -1,11 +1,11 @@
-.container{
+.container {
     width: 120rem;
     margin: 4rem auto;
     height: 52rem;
 }
 
-
-.header{
+/*styling for the header*/
+.header {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -15,120 +15,116 @@
     background-image: url(../images/OIP.jpg);
 }
 
-
-.header__title{
-   
+/*styling for every header title*/
+.header__title {
     flex: 50%;
-    font-size:30px;
+    font-size: 30px;
 }
 
-.header__title h1{
+.header__title h1 {
     font-size: 2.5rem;
     text-transform: uppercase;
 }
 
-.header__title h2{
+.header__title h2 {
     font-size: 1.7rem;
 }
 
-
-.header_content{
+.header_content {
     width: 100%;
-    flex:25%;
-   
+    flex: 25%;
 }
 
-
-.conf_logo{
+.conf_logo {
     width: 50%;
-    
 }
 
-.udm_logo{
+/*size for the udm logo*/
+.udm_logo {
     width: 50%;
-  
 }
 
+/*responsiveness*/
 @media (max-width: 800px) {
     .header {
-      flex-direction: column;
+        flex-direction: column;
     }
 
     .card {
         width: 100%;
-     }
-  }
+    }
+}
 
-
-.content{
+/*for the sidebar*/
+.content {
     display: flex;
 }
 
-/**Sidebar**/
 
-.active{
+/*only for home*/
+.active {
     background-color: var(--Colour4-pale-blue);
 }
 
-.sidebar__link{
+
+.sidebar__link {
     text-decoration: none;
     color: var(--Colour6-black);
     /* padding: 1rem; */
     font-size: 20px;
     /* border: 2px solid yellow; */
     padding-bottom: 10%;
-    
 }
 
-.sidebar__link:hover{
+/*become white on hovering*/
+.sidebar__link:hover {
     color: var(--Colour8-white);
 }
 
-/**remove the dot**/
-.sidebar__item{
+/*remove the dot*/
+.sidebar__item {
     list-style: none;
 }
 
-.sidebar__item:hover{
+.sidebar__item:hover {
     background-color: var(--Colour2-dark-blue);
     transition: background-color 0.6s ease;
 }
 
 /**main**/
 
-
-
-
-.top_content{
+.top_content {
     display: flex;
     /* border: 2px solid red; */
     width: 100%;
+    /*display image*/
     background-image: url(../images/banner.jpg);
     padding: 2%;
     background-size: cover;
     background-repeat: no-repeat;
     height: 320px;
-    justify-content: center;
+    /*justify-content: center;*/
     align-items: center;
 }
 
-.counter{
+.counter {
     display: flex;
     align-items: center;
     /* border: 2px solid blue; */
+    /*put space between icon calender and the number*/
     padding: 2%;
 }
 
-.count{
+.count {
     /* position: absolute; */
     /* top: 50%;
     left: 30%; */
     /* border: 2px solid yellow; */
-    font-family: 'fontawesome';
+    font-family: "fontawesome";
     display: flex;
     align-items: center;
     font-size: 40px;
-    background-color:var(--Colour8-white);
+    background-color: var(--Colour8-white);
     opacity: 0.6;
     padding: 1%;
     width: 100%;
@@ -137,7 +133,15 @@
     /* background-image: url(../images/banner.jpg); */
 }
 
-.advert{
+.advert {
+    display: flex;
+    flex-direction: row;
+    font-size: 40px;
+    text-align: center;
+    padding: 2%;
+}
+
+.previous_conference {
     display: flex;
     flex-direction: row;
     font-size: 30px;
@@ -145,15 +149,7 @@
     padding: 2%;
 }
 
-.previous_conference{
-    display: flex;
-    flex-direction: row;
-    font-size: 30px;
-    text-align: center;
-    padding: 2%;
-}
-
-.block{
+.block {
     border: 1px solid var(--Colour7-grey);
     min-height: 25vh;
     font-size: 1.5rem;
@@ -166,25 +162,27 @@
     box-shadow: var(--box-shadow);
 }
 
-.content ul,ol{
+.content ul,
+ol {
     list-style-position: inside;
 }
 
-.books{
+.books {
     width: 19%;
     margin: 2%;
     border: 4px solid var(--Colour2-dark-blue);
     box-shadow: var(--box-shadow);
 }
+
 /**sidebar**/
-.side{
+.side {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding: 1%;
 }
 
-.box{
+.box {
     border: 1px solid var(--Colour7-grey);
     min-height: 25vh;
     font-size: 1.15rem;
@@ -195,124 +193,121 @@
     flex-direction: column;
     justify-content: space-evenly;
     background-color: var(--C4-pale-blue);
-    box-shadow: var(--box-shadow)  ;
+    box-shadow: var(--box-shadow);
 }
 
-
-
-.important_dates{
-    text-align:left;
+.important_dates {
+    text-align: left;
     font-size: 1.4rem;
 }
 
-.important_dates div{
+.important_dates div {
     padding: 0 5%;
 }
 
-.session_titles{
-    color:var(--Colour2-dark-blue);
+.session_titles {
+    color: var(--Colour2-dark-blue);
     text-decoration: underline;
 }
 
-.conf_mgt, .pub_partners{
+
+.conf_mgt,
+.pub_partners {
     padding: 1%;
     min-height: 0vh;
-
-
 }
 
-.prev_conf{
+.prev_conf {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     font-size: 2rem;
     flex: 50%;
 }
-.social_media{
+
+.social_media {
     flex: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.prev_conf_links{
+.prev_conf_links {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.conf_icon{
+.conf_icon {
     height: 6vh;
     margin: 1rem 0;
 }
-.conf_link{
+
+.conf_link {
     text-decoration: none;
 }
 
-.conf_link:hover{
+.conf_link:hover {
     text-decoration: underline;
 }
 
-
-.footer{
+.footer {
     font-size: 2rem;
     color: white;
     background-color: var(--Colour1-blue);
-} 
+}
 
-.copyright{
+.copyright {
     text-align: center;
     padding: 1%;
 }
 
 /**registration**/
-h2{
+h2 {
     color: var(--Colour1-blue);
     padding: 1.2%;
     margin-bottom: 2rem 0;
 }
 
-table, th,td{
+table,
+th,
+td {
     border: 1px solid var(--Colour6-black);
     border-collapse: collapse;
 }
 
-th, td{
+th,
+td {
     padding: 1%;
     text-align: center;
 }
 
-th{
+th {
     background-color: var(--Colour1-blue);
     color: var(--Colour8-white);
 }
 
-
-.block_title{
+.block_title {
     color: var(--Colour2-dark-blue);
     padding: 1%;
     margin-bottom: 2rem;
 }
 
-.block_heading{
+.block_heading {
     color: var(--Colour1-blue);
     padding: 1.2%;
     margin-bottom: 2rem 0;
 }
 
-
-
-
 /**KEYNOTES**/
 
-
-.speaker_title{
+.speaker_title {
     border: 1px solid var(--Colour6-black);
     box-shadow: var(--box-shadow);
     margin: 2rem 0;
 }
 
-.speaker_heading{
+.speaker_heading {
     font-size: 4rem;
     color: var(--Colour2-dark-blue);
     padding: 1%;
@@ -320,56 +315,53 @@ th{
     text-transform: uppercase;
 }
 
-.speaker{
+.speaker {
     display: flex;
     justify-content: space-between;
     margin: 2rem 0;
 }
 
-.speaker_details{
+.speaker_details {
     display: flex;
     font-size: 1.6rem;
     flex: 1 0 0;
     padding-left: 4rem;
 }
 
-
-.speaker_img{
+.speaker_img {
     width: 12vw;
     height: 25vh;
     margin: 0 2%;
 }
 
-
 /**Contact**/
 
-
-
-.contact{
+.contact {
     padding-left: 2%;
     font-size: 2rem;
-    color:var(--Colour2-dark-blue);
+    color: var(--Colour2-dark-blue);
 }
 
-input[type=text], select, textarea {
+input[type="text"],
+select,
+textarea {
     width: 40%;
     padding: 4px;
     border-radius: 4px;
     resize: vertical;
-  }
-  
-  input[type=submit] {
+}
+
+input[type="submit"] {
     padding: 4px 4px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     float: right;
-  }
+}
 
-  /**about**/
+/**about**/
 
-
-.about{
+.about {
     border: 1px solid var(--Colour7-grey);
     min-height: 25vh;
     font-size: 1.5rem;
@@ -382,32 +374,30 @@ input[type=text], select, textarea {
     box-shadow: var(--box-shadow);
 }
 
-
-.about_title{
+.about_title {
     color: var(--Colour2-dark-blue);
     padding: 1%;
     margin-bottom: 2rem;
 }
 
-.about_heading{
+.about_heading {
     color: var(--Colour1-blue);
     padding: 1.2%;
     margin-bottom: 2rem 0;
 }
 
 /**venue**/
-.conference{
+.conference {
     font-weight: bold;
     font-size: large;
 }
 
-.red_note{
+.red_note {
     color: rgb(155, 19, 19);
 }
 
-
 /**travel**/
-.travel_bold{
+.travel_bold {
     font-weight: bold;
     font-size: large;
 }
@@ -421,16 +411,19 @@ input[type=text], select, textarea {
     border-radius: 10px;
     margin: 10px;
     height: 350px;
- }
- .card p {
+}
+
+.card p {
     font-size: 18px;
- }
- .cardContainer:after {
+}
+
+.cardContainer:after {
     content: "";
     display: table;
     clear: both;
- }
- /* @media screen and (max-width: 600px) {
+}
+
+/* @media screen and (max-width: 600px) {
     .card {
        width: 100%;
     }
