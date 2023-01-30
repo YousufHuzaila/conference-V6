@@ -293,6 +293,10 @@ th {
     margin-bottom: 2rem;
 }
 
+.heading{
+    font-weight: bold;
+}
+
 .block_heading {
     color: var(--Colour1-blue);
     padding: 1.2%;
